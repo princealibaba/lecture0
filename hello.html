@@ -3,16 +3,100 @@
 
 <head>
     <title>My Webpage!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+
+            border: 3px solid grey;
+        }
+
+        table {
+            border: 2px solid grey;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th,
+        td {
+            border: 1px solid gray;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+
+        }
+
+
+        #top {
+            font-size: 36px;
+        }
+
+        #middle {
+            font-size: 26px;
+        }
+
+        #bottom {
+            font-size: 16px;
+        }
+
+        .sections {
+            font-weight: lighter;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    Hello, World! Hello Again!
+    <div style="background-color: coral; width: 100%; height: 20%; margin: 30px; padding: 30px;">FACEBOOK</div>
+    <h1>Hello, World! Welcome To My Webpage.</h1>
+    <h1>Second header.</h1>
+    <p>This is paragraph of text.</p>
+    <p>Wow. Another paragraph.</p>
 
     <form>
         <input type="text" placeholder="Full Name" name="name">
         <button>Submit!</button>
     </form>
+
+    <h2>Presidents</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Years in Office</th>
+        </tr>
+        <tr>
+            <td>George</td>
+            <td>Washington</td>
+            <td>1789-1797</td>
+        </tr>
+        <tr>
+            <td>George</td>
+            <td>Bush</td>
+            <td>2000-2008</td>
+        </tr>
+        <tr>
+            <td>Barack</td>
+            <td>Obama</td>
+            <td>2008-2016</td>
+        </tr>
+    </table>
+
+    <div id="top">
+        This is the <span class="sections">top</span> of the section.
+    </div>
+    <div id="middle">
+        This is the <span class="sections">middle</span> of the sections.
+    </div>
+    <div id="bottom">
+        This is the <span class="sections">bottom</span> of the sections.
+    </div>
 </body>
 
 </html>
